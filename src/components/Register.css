@@ -1,0 +1,56 @@
+/* src/components/Register.css */
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Kích thước tối đa của form */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+  border-radius: 8px; /* Bo góc cho form */
+  background-color: #fff; /* Màu nền của form */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Đậm cho label */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Đường viền của input */
+  border-radius: 4px; /* Bo góc của input */
+}
+
+.register-form button {
+  background-color: #4CAF50; /* Màu nền của nút */
+  color: white; /* Màu chữ của nút */
+  border: none; /* Xóa bỏ đường viền của nút */
+  padding: 10px 20px; /* Khoảng cách trong nút */
+  text-align: center; /* Căn giữa văn bản trong nút */
+  text-decoration: none; /* Xóa bỏ gạch chân (chỉ áp dụng cho link, nhưng thêm vào để chắc chắn) */
+  display: inline-block; /* Hiển thị như một khối inline */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút */
+  border-radius: 5px; /* Bo góc của nút */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+.register-form button:hover {
+  background-color: #45a049; /* Màu nền của nút khi hover */
+}

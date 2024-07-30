@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header .logo a {
+    text-decoration: none; /* Xóa gạch chân */
+    color: inherit; /* Giữ màu chữ giống như của thẻ cha */
+    display: flex; /* Để căn chỉnh biểu tượng và chữ */
+    align-items: center; /* Căn chỉnh theo chiều dọc */
+  }
+  
+  /* Style cho chữ trong logo */
+  .header .logo h1 {
+    margin: 0;
+    font-size: 24px; /* Thay đổi kích thước chữ */
+    font-weight: bold; /* Thay đổi kiểu chữ */
+  }
+  
+  /* Style cho biểu tượng */
+  .header .logo .icon {
+    width: 24px; /* Kích thước của biểu tượng */
+    height: 24px;
+    margin-right: 10px; /* Khoảng cách giữa biểu tượng và chữ */
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .user-info span {
+    margin-right: 10px;
+  }
+  
+  .header .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  aside {
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+  }
+  
+  aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  aside nav ul li {
+    border-bottom: 1px solid #444;
+  }
+  
+  aside nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  aside nav ul li a.active {
+    background-color: #555;
+  }
+  
+  aside .actions {
+    margin-top: auto;
+    padding: 15px;
+  }
+  
+  aside .actions button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-left: 220px; /* Adds space to accommodate the aside */
+  }
+  
+  /* Ensure content does not overlap with aside */
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  aside {
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    bottom: 0;
+  }
+  
+  main {
+    margin-left: 220px; /* Add margin-left to provide space for aside */
+  }
